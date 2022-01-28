@@ -1,0 +1,45 @@
+/* 
+---- 01 TYPOGRAPHY SYSTEM
+
+    --  Font sizes (px):
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    --  Font weights:
+
+    --  Line height:
+        default: 1
+
+----- 02 COLOR
+
+    --  Primary: #e67e22
+    --  Tints:
+    --  Shades:
+    --  Accents:
+    --  Greys: #555
+
+----- 03 SHADOWS
+
+----- 04 BORDER RADIUS
+
+----- 05 WHITESPACE
+
+    -- Spacing:
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* Global reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Syles */
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
