@@ -33,6 +33,7 @@
 * ----- 04 BORDER RADIUS
 
     -- Default: 9px
+    -- Medium: 11px
 
 * ----- 05 WHITESPACE
 
@@ -79,6 +80,30 @@ body {
     padding: 0 3.2rem;
 }
 
+strong {
+    font-weight: 500;
+}
+
+.link:visited,
+.link:link {
+    display: inline-block;
+
+    color: var(--main-color);
+    text-decoration: none;
+
+    border-bottom: 1px solid currentcolor;
+
+    padding-bottom: 2px;
+
+    transition: all 300ms;
+}
+
+.link:hover,
+.link:active {
+    color: var(--darker-color);
+    border-bottom: 1px solid transparent;
+}
+
 .grid {
     display: grid;
     column-gap: 6.4rem;
@@ -101,6 +126,14 @@ body {
     margin-right: 1.6rem !important;
 }
 
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
 .btn:link,
 .btn:visited {
     font-size: 2rem;
@@ -113,7 +146,7 @@ body {
 
     border-radius: 9px;
 
-    transition: background-color 300ms;
+    transition: all 300ms;
 }
 
 .heading-primary,
