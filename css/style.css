@@ -10,6 +10,8 @@
     padding: 0 4.8rem;
 
     background-color: var(--background-color);
+
+    position: relative;
 }
 
 .logo {
@@ -22,7 +24,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 4.8rem;
 }
 
 .main-nav-list li a:link,
@@ -55,6 +57,28 @@
 #nav-cta:hover,
 #nav-cta:active {
     background-color: var(--darker-color);
+}
+
+/** Mobile nav */
+
+.btn-mobile-nav {
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
 }
 
 /** Hero banner */
@@ -448,12 +472,12 @@
     color: #333;
 
     position: absolute;
-    top: 5%;
-    right: -8%;
+    top: 6%;
+    right: -23%;
 
     background-color: #ffd43b;
 
-    padding: 0.8rem 3.4rem;
+    padding: 0.8rem 10rem;
 
     transform: rotate(45deg);
 }
