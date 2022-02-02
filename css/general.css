@@ -23,8 +23,8 @@
 * ----- 02 COLOR
 
     --  Primary: #e67e22
-    --  Tints: #fdf2e9
-    --  Shades: #cf711f
+    --  Tints: #fdf2e9 #eb984e
+    --  Shades: #cf711f #2e1907
     --  Accents:
     --  Greys: #555 #333 #888
 
@@ -138,19 +138,45 @@ strong {
     text-align: center;
 }
 
+*:focus {
+    outline: none;
+
+    box-shadow: 0 0 0 0.8rem #e67d2285;
+}
+
+.btn,
 .btn:link,
 .btn:visited {
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
+    font-family: inherit;
 
     display: inline-block;
 
     padding: 1.6rem 3.2rem;
 
     border-radius: 9px;
+    border: none;
+
+    cursor: pointer;
 
     transition: all 300ms;
+}
+
+.btn--form {
+    background-color: #45260a;
+
+    color: var(--background-color);
+
+    align-self: end;
+
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: white;
+    color: #555;
 }
 
 .heading-primary,
