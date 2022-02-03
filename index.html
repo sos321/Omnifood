@@ -4,6 +4,19 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Omnifood is an AI-powered food subscription, that will make you eat healthy again!"
+        />
+        <meta
+            name="keywords"
+            content="Omnifood, Food subscription, Eat healthy"
+        />
+        <meta name="author" content="Filip" />
+
+        <link rel="icon" href="img/favicon64.png" />
+        <link rel="apple-touch-icon" href="img/favicon180.png" />
+        <link rel="manifest" href="manifest.webmanifest" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -110,8 +123,12 @@
                         </div>
                     </div>
                     <div class="hero-img-box">
+                        <picture>
+                            <source srcset="img/hero.webp" type="image" />
+                            <source srcset="img/hero.png" type="image" />
+                        </picture>
                         <img
-                            src="img/hero.png"
+                            src="img/hero.webp"
                             alt="Hero image - Woman enjoying food, Meals in storage"
                             class="hero-img"
                         />
@@ -837,7 +854,7 @@
             </div>
         </footer>
 
-        <script src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+        <script src="https://unpkg.com/zenscroll@4.0.2/zenscroll-min.js"></script>
         <script src="js/script.js"></script>
         <script
             type="module"
