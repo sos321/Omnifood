@@ -100,6 +100,12 @@ strong {
     font-weight: 500;
 }
 
+.stop-overflow {
+    overflow: hidden;
+
+    height: 100%;
+}
+
 /** Links */
 
 .link:visited,

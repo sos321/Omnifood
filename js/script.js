@@ -10,6 +10,9 @@ const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
+    btnNavEl.blur();
+
+    document.querySelector("html").classList.toggle("stop-overflow");
 });
 
 // Smooth scroll
