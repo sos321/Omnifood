@@ -7,3 +7,6 @@ My first web development project with help from Jonas Schmedtmann html & css cou
 Technologies used:
 - HTML
 - CSS
+
+IDE:
+- VS Code
