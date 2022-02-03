@@ -41,8 +41,10 @@ allLinks.forEach(function (link) {
             sectionEl.scrollIntoView({ behavior: "smooth" });
         }
 
-        if (link.classList.contains("main-nav-link"))
+        if (link.classList.contains("main-nav-link")) {
             headerEl.classList.toggle("nav-open");
+            document.querySelector("html").classList.toggle("stop-overflow");
+        }
 
         // Removing focus from links when clicked
         link.blur();
