@@ -8,6 +8,11 @@ yearEl.textContent = currentYear;
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
+// Reset mobile navigation
+document.body.onload = function () {
+    document.querySelector("html").classList.remove("stop-overflow");
+};
+
 btnNavEl.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
     btnNavEl.blur();
