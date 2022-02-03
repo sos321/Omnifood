@@ -4,9 +4,15 @@ Landing page of a fictional food company
 
 My first web development project with help from Jonas Schmedtmann html & css course.
 
-Technologies used:
+### Technologies used:
 - HTML
 - CSS
+- JavaScript
 
-IDE:
+### Features:
+- Responsive design
+- Basic SEO
+- Fully interactable
+
+### IDE:
 - VS Code
