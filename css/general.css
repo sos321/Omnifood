@@ -75,6 +75,8 @@ body {
 
 /** General styles */
 
+/** Helpers  */
+
 .container {
     max-width: 120rem;
 
@@ -82,9 +84,23 @@ body {
     padding: 0 3.2rem;
 }
 
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
 strong {
     font-weight: 500;
 }
+
+/** Links */
 
 .link:visited,
 .link:link {
@@ -105,6 +121,8 @@ strong {
     color: var(--darker-color);
     border-bottom: 1px solid transparent;
 }
+
+/** Grid */
 
 .grid {
     display: grid;
@@ -132,17 +150,7 @@ strong {
     grid-template-columns: repeat(5, 1fr);
 }
 
-.margin-right-sm {
-    margin-right: 1.6rem !important;
-}
-
-.margin-bottom-md {
-    margin-bottom: 4.8rem !important;
-}
-
-.center-text {
-    text-align: center;
-}
+/** Buttons */
 
 *:focus {
     outline: none;
@@ -185,6 +193,8 @@ strong {
     color: #555;
 }
 
+/** Headings */
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -225,6 +235,8 @@ strong {
 
     margin-bottom: 1.6rem;
 }
+
+/** Lists */
 
 .list {
     list-style: none;
