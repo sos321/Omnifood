@@ -41,7 +41,7 @@ allLinks.forEach(function (link) {
             sectionEl.scrollIntoView({ behavior: "smooth" });
         }
 
-        if (link.classList.contains("main-nav-link")) {
+        if (link.classList.contains("main-nav-link") && screen.width <= 834) {
             headerEl.classList.toggle("nav-open");
             document.querySelector("html").classList.toggle("stop-overflow");
         }
