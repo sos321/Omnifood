@@ -21,34 +21,20 @@ btnNavEl.addEventListener("click", function () {
 });
 
 // Smooth scroll
-const allLinks = document.querySelectorAll("a:link");
+function smoothScroll(e) {
+    e.preventDefault();
 
-allLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const href = link.getAttribute("href");
+    document
+        .querySelector(e.target.getAttribute("href") || "body")
+        .scrollIntoView({ behavior: "smooth" });
 
-        // Back to top
-        if (href === "#")
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
+    e.target.blur();
+}
 
-        // Other links
-        if (href !== "#" && href.startsWith("#")) {
-            const sectionEl = document.querySelector(href);
-            sectionEl.scrollIntoView({ behavior: "smooth" });
-        }
+headerEl.addEventListener("click", smoothScroll);
 
-        if (link.classList.contains("main-nav-link") && screen.width <= 834) {
-            headerEl.classList.toggle("nav-open");
-            document.querySelector("html").classList.toggle("stop-overflow");
-        }
-
-        // Removing focus from links when clicked
-        link.blur();
-    });
+document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", smoothScroll);
 });
 
 // Sticky navigation
@@ -87,7 +73,6 @@ function checkFlexGap() {
     document.body.appendChild(flex);
     var isSupported = flex.scrollHeight === 1;
     flex.parentNode.removeChild(flex);
-    console.log(isSupported);
 
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
