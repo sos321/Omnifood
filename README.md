@@ -8,20 +8,20 @@ This page features a very nicely designed landing page with responsive design. I
 
 ## Technologies
 
--   HTML
--   CSS
--   JavaScript (basic)
+- HTML
+- CSS
+- JavaScript (basic)
 
 ## What I learned
 
 This was my first real deep dive into advanced and more complex coding. I learned a lot of HTML and CSS:
 
--   Basic elements
--   Web page structure
--   How to apply css rules
--   CSS media queries and responsive design
--   Working with VS Code
--   Using Git and GitHub
+- Basic elements
+- Web page structure
+- How to apply css rules
+- CSS media queries and responsive design
+- Working with VS Code
+- Using Git and GitHub
 
 ## Biggest obstacle
 
